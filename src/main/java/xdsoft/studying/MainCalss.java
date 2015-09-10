@@ -16,6 +16,8 @@ public class MainCalss {
 		Class<?> cl = Class.forName(classname);
 		testInterf obj = (testInterf) cl.newInstance();
 		obj.prn();
+		
+		bn.setName("Apple");
 
 	}
 
