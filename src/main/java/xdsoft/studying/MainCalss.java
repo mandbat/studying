@@ -13,7 +13,7 @@ public class MainCalss {
 		MyBean bn = (MyBean) ac.getBean("my-bean");
 
 		String classname = bn.getClassname();
-		Class cl = Class.forName(classname);
+		Class<?> cl = Class.forName(classname);
 		testInterf obj = (testInterf) cl.newInstance();
 		obj.prn();
 
